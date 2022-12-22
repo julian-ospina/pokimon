@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title> POKIMON!  </title>
+   
+</head>
+<body>
+    
+    <link rel="stylesheet" href="./css/pokimon.css">
+    
+    <section id="choose-pet"> 
+
+    <h1 id="title"> Pokimon! </h1>    
+    <h2 id="attack">Choose your pet!</h2>
+
+    <div id="containerCards" class="pokimons">
+    </div>
+    
+    <button id="button-pet">choose!</button>
+    
+</section >
+
+<section id="seeMap" >
+    <h2 id="title"> Have a walk with your Pokimón!</h2>
+    <canvas id="map" ></canvas>    
+    <button onmouseup="stopMovement()" onmousedown="moveRight()" >Move it right!</button>
+    <button onmouseup="stopMovement()" onmousedown="moveDown()" >Move it down!</button>
+    <button onmouseup="stopMovement()" onmousedown="moveUp()" >Move it up!</button>
+    <button onmouseup="stopMovement()" onmousedown="moveLeft()" >Move it left!</button>
+</section>
+
+
+
+    <section id="choose-attack">
+        <h1 id="title"> Pokimon! </h1>  
+        <h2 id="attack">Choose your attack!</h2>
+       
+        <div id="attackCards" class="pokimonattack">
+               
+        </div>
+           
+            <section id="messages"> 
+            <div id="totalResult">good luck !!!</div> 
+            <section id="restart">
+                <button id="button-restart">restart</button>
+                </section>
+            </section> 
+    <div id= "altPlayer">
+        <div id="goodplayer">
+            <span id="life-player">0</span>
+            <p id="pet-player"></p>
+            <div id="player-Attack"></div> 
+
+        </div>
+        <div id="badplayer">
+            <span id="life-enemy">0</span>
+            <p id = "bot-player"></p>
+            <div id="Enemy-Attack"></div> 
+         
+        </div>
+    </div>  
+    </section>  
+    <script src="./js/pokimon.js"></script>
+</body>
+</html>
+
